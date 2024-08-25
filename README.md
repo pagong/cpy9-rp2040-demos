@@ -19,6 +19,12 @@ This is the enhanced **Pico** with Micro-USB port, 2MB flash and an onboard WiFi
 ## WaveShare RP2040-One
 [This](media/RP2040-One-details-9.jpg) is a tiny **Pico** [clone](http://www.waveshare.com/wiki/RP2040-One) with USB-A port, 4MB flash and a single NEOpixel.
 
+## WaveShare RP2040-ETH
+[This](media/RP2040-ETH-details-inter.jpg) is a tiny **Pico** [clone](http://www.waveshare.com/wiki/RP2040-ETH) with USB-C port, 4MB flash and an onboard Ethernet interface.
+
+## WaveShare RP2040-LCD-0.96
+[This](media/RP2040-LCD-0.96-details-7.jpg) is a tiny **Pico** [clone](http://www.waveshare.com/wiki/RP2040-LCD-0.96) with USB-C port, 2MB flash and a 160x80 pixel colorful LCD display.
+
 ## VCC-GND YD-RP2040
 This is a **Pico** clone with USB-C port, 16MB flash, user button and a single NEOpixel.
 
