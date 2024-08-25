@@ -22,6 +22,8 @@ CircuitPython demos running on various RP2040 boards
 ## WaveShare RP2040-ETH
 [This](media/RP2040-ETH-details-inter.jpg) is a tiny **Pico** [clone](http://www.waveshare.com/wiki/RP2040-ETH) with USB-C port, 4MB flash and an onboard Ethernet interface.
 
+- some usage [hints](microPython/RP2040-ETH.md)
+
 ## WaveShare RP2040-LCD-0.96
 [This](media/RP2040-LCD-0.96-details-7.jpg) is a tiny **Pico** [clone](http://www.waveshare.com/wiki/RP2040-LCD-0.96) with USB-C port, 2MB flash and a 160x80 pixel colorful LCD display.
 
