@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2024 pagong
+# SPDX-FileCopyrightText: 2024 Pagong
 # SPDX-License-Identifier: MIT
 
 import time

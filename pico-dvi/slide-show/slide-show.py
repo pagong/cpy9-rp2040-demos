@@ -1,5 +1,6 @@
 # SPDX-FileCopyrightText: 2023 Liz Clark for Adafruit Industries
 # SPDX-FileCopyrightText: Adapted from Phil B.'s 16bit_hello Arduino Code
+# SPDX-FileCopyrightText: 2024 Pagong (slide show)
 #
 # SPDX-License-Identifier: MIT
 

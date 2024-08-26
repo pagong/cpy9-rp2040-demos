@@ -1,6 +1,5 @@
-# SPDX-FileCopyrightText: 2024 Mike Doerr
+# SPDX-FileCopyrightText: 2024 Pagong
 # SPDX-License-Identifier: MIT
-
 
 import os
 import time
@@ -156,7 +155,6 @@ def Draw_center():
 def Draw_hour(h, m):
     turtle.pencolor(Color.BLUE)
     turtle.goto(origin)
-    #h = 30 * (h%12) + 5 * (m//10)
     h = 30 * (h%12) + (m//2)
     turtle.setheading(h)
     hand_h1()

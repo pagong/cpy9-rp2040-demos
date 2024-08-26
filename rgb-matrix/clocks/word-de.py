@@ -1,5 +1,5 @@
 # SPDX-FileCopyrightText: 2023 Frederick M Meyer
-# German version: 2024 Mike Doerr
+# German version: 2024 Pagong
 #
 # SPDX-License-Identifier: MIT
 
@@ -13,7 +13,6 @@ import adafruit_ds3231
 import displayio
 import framebufferio
 import rgbmatrix
-import digitalio
 import terminalio
 import adafruit_display_text as adt
 import adafruit_display_text.label as adtl
@@ -107,15 +106,6 @@ def pimoroni_rgb():
 if RGB_TYPE == "SeenGreat":     matrix = seengreat_rgb()
 elif RGB_TYPE == "Pimoroni":    matrix = pimoroni_rgb()
 else:                           raise NameError(RGB_TYPE)
-
-##############
-
-# These pins are for the Hub75-Pico adapter by SeenGreat
-#matrix = rgbmatrix.RGBMatrix(
-#    width=64, height=64, bit_depth=2,
-#    rgb_pins=[board.GP2, board.GP3, board.GP4, board.GP5, board.GP8, board.GP9],
-#    addr_pins=[board.GP10, board.GP16, board.GP18, board.GP20, board.GP22],
-#    clock_pin=board.GP11, latch_pin=board.GP12, output_enable_pin=board.GP13)
 
 display = framebufferio.FramebufferDisplay(matrix, auto_refresh=True, rotation = 0)
 
