@@ -36,7 +36,8 @@ CircuitPython demos running on various RP2040 based boards.
 ## VCC-GND YD-RP2040
 [This](media/YD-2040-PIN.png) is a **Pico** [clone](https://sites.google.com/view/raspberrypibuenosaires/yd-rp2040-16mb) with USB-C port, 16MB flash, user button and a single NEOpixel.
 
-- Slide show [demo](pico-dvi/slide-show/slide-show.py). The "YD-RP2040" has 15MB free on the `CIRCUITPY` drive, which is great for a slide show. But you need to install the CircuitPython firmware for the "Raspberry Pi" **Pico**, as the "picodvi" module is only included there.
+- Pico DVI
+  - Slide show [demo](pico-dvi/slide-show/slide-show.py). The "YD-RP2040" has 15MB free on the `CIRCUITPY` drive, which is great for a slide show. But you need to install the CircuitPython firmware for the "Raspberry Pi" **Pico**, as the "picodvi" module is only included there.
 
 # YubiKey simulator
 See this [repo](https://github.com/pagong/cpy9-rp2040-yksim)
