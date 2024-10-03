@@ -33,6 +33,8 @@ CircuitPython demos running on various RP2040 based boards.
 ## WaveShare RP2040-LCD-0.96
 [This](media/RP2040-LCD-0.96-details-7.jpg) is a tiny **Pico** [clone](http://www.waveshare.com/wiki/RP2040-LCD-0.96) with USB-C port, 2MB flash and a 160x80 pixel colorful LCD display.
 
+- some LCD demos (by [richteel](https://github.com/richteel/Waveshare-RP2040-LCD-0.96))
+
 ## VCC-GND YD-RP2040
 [This](media/YD-2040-PIN.png) is a **Pico** [clone](https://sites.google.com/view/raspberrypibuenosaires/yd-rp2040-16mb) with USB-C port, 16MB flash, user button and a single NEOpixel.
 
