@@ -8,7 +8,7 @@ CircuitPython demos running on various RP2040 based boards.
   - Analog [clock](rgb-matrix/clocks/analog.py), uses "displayio" and Adafruit's "turtle" graphics
   - German Word [clock](rgb-matrix/clocks/word-de.py), inspired by an English word clock
 - NEOpixel matrix
-  - Fire [demo](neopixel/fire/fire9.py), based on Fire2012 algorithm by Mark Kriegsman
+  - Fire [demo](neopixel/fire/fire12.py), based on Fire2012 algorithm by Mark Kriegsman
  
 ## Raspberry Pi Pico-W
 [This](media/Raspberry-Pi-Pico-W-details-17.jpg) is the enhanced **Pico** with Micro-USB port, 2MB flash and an onboard WiFi chip.
