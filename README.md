@@ -6,9 +6,9 @@ CircuitPython demos running on various RP2040 based boards.
 
 - RGB matrix
   - Analog [clock](rgb-matrix/clocks/analog.py), uses "displayio" and Adafruit's "turtle" graphics
-  - German Word [clock](rgb-matrix/clocks/word-de.py), inspired by an English word clock
+  - German Word [clock](rgb-matrix/clocks/word-de.py). Inspired by an English word [clock](rgb-matrix/clocks/word-en.py), by [VtechOps](https://adafruit-playground.com/u/VPTechOps/pages/rgb-matrix-word-clocks). 
 - NEOpixel matrix
-  - Fire [demo](neopixel/fire/fire12.py), based on Fire2012 algorithm by Mark Kriegsman
+  - Fire [demo](neopixel/fire/fire12.py), based on (Fire2012](https://blog.kriegsman.org/2014/04/04/fire2012-an-open-source-fire-simulation-for-arduino-and-leds/) algorithm by Mark Kriegsman
  
 ## Raspberry Pi Pico-W
 [This](media/Raspberry-Pi-Pico-W-details-17.jpg) is the enhanced **Pico** with Micro-USB port, 2MB flash and an onboard WiFi chip.
@@ -17,7 +17,7 @@ CircuitPython demos running on various RP2040 based boards.
 [This](media/RP2040-Matrix-details-9.jpg) is a tiny **Pico** [clone](http://www.waveshare.com/wiki/RP2040-Matrix) with USB-C port, 2MB flash and a 5x5 NEOpixel matrix.
 
 - Rainbow [demo](neopixel/rainbow/rainbow7.py), based on an Adafruit example
-- Fire [demo](neopixel/fire/fire8.py), based on Fire2012 algorithm by Mark Kriegsman
+- Fire [demo](neopixel/fire/fire8.py), also based on Fire2012 algorithm by Mark Kriegsman
 
 ## WaveShare RP2040-Zero
 [This](media/RP2040-Zero-details-7.jpg) is a tiny **Pico** [clone](http://www.waveshare.com/wiki/RP2040-Zero) with USB-C port, 2MB flash and a single NEOpixel.
