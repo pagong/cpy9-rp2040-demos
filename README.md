@@ -10,7 +10,6 @@ CircuitPython demos running on various RP2040 based boards.
 - NEOpixel matrix
   - Fire [demo](neopixel/fire/fire12.py), based on [Fire2012](https://blog.kriegsman.org/2014/04/04/fire2012-an-open-source-fire-simulation-for-arduino-and-leds/) algorithm by Mark Kriegsman
 - Pico-LCD-0.96
-  - add-on board for the **Pico** with several buttons and a 4-wire LCD (ST7738S) with similar pin-out as on the RP2040-LCD-0.96 (see below)
 
 ## Raspberry Pi Pico-W
 [This](media/Raspberry-Pi-Pico-W-details-17.jpg) is the enhanced **Pico** with Micro-USB port, 2MB flash and an onboard WiFi chip.
@@ -35,7 +34,7 @@ CircuitPython demos running on various RP2040 based boards.
 ## WaveShare RP2040-LCD-0.96
 [This](media/RP2040-LCD-0.96-details-7.jpg) is a tiny **Pico** [clone](http://www.waveshare.com/wiki/RP2040-LCD-0.96) with USB-C port, 2MB flash and a 160x80 pixel colorful LCD display.
 
-- some LCD demos (by [richteel](https://github.com/richteel/Waveshare-RP2040-LCD-0.96))
+- some LCD demos (by [richteel](https://github.com/richteel/Waveshare-RP2040-LCD-0.96)); use `adafruit_st7735r` as display driver
 
 ## VCC-GND YD-RP2040
 [This](media/YD-2040-PIN.png) is a **Pico** [clone](https://sites.google.com/view/raspberrypibuenosaires/yd-rp2040-16mb) with USB-C port, 16MB flash, user button and a single NEOpixel.
@@ -51,8 +50,11 @@ CircuitPython demos running on various RP2040 based boards.
 ## Pico-DVI
 
 ## WaveShare Pico-LCD-0.96
+[This](media/Pico-LCD-0.96-details-inter.jpg) is an add-on board for the **Pico** with a 4-wire LCD (ST7735S), a digital joystick and 2 user buttons. See the [wiki](https://www.waveshare.com/wiki/Pico-LCD-0.96) for more details.
 
+- pin-out of the 4-wire LCD is similar to the RP2040-LCD-0.96; use `adafruit_st7735r` as display driver
 
 # YubiKey simulator
 See this [repo](https://github.com/pagong/cpy9-rp2040-yksim)
+
 
