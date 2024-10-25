@@ -9,7 +9,9 @@ CircuitPython demos running on various RP2040 based boards.
   - German Word [clock](rgb-matrix/clocks/word-de.py). Inspired by an English Word [clock](rgb-matrix/clocks/word-en.py), by [VPTechOps](https://adafruit-playground.com/u/VPTechOps/pages/rgb-matrix-word-clocks). 
 - NEOpixel matrix
   - Fire [demo](neopixel/fire/fire12.py), based on [Fire2012](https://blog.kriegsman.org/2014/04/04/fire2012-an-open-source-fire-simulation-for-arduino-and-leds/) algorithm by Mark Kriegsman
- 
+- Pico-LCD-0.96
+  - add-on board for the **Pico** with several buttons and a 4-wire LCD (ST7738S) with similar pin-out as on the RP2040-LCD-0.96 (see below)
+
 ## Raspberry Pi Pico-W
 [This](media/Raspberry-Pi-Pico-W-details-17.jpg) is the enhanced **Pico** with Micro-USB port, 2MB flash and an onboard WiFi chip.
 
@@ -40,6 +42,16 @@ CircuitPython demos running on various RP2040 based boards.
 
 - Pico DVI
   - Slide show [demo](pico-dvi/slide-show/slide-show.py). The "YD-RP2040" has 15MB free on the ``CIRCUITPY`` drive, which is great for a slide show. But you need to install the CircuitPython firmware for the "Raspberry Pi" **Pico**, as the ``picodvi`` module is only included there.
+
+## WaveShare RP2040-PiZero
+[This](media/RP2040-PiZero-Schematic.pdf) is a **Pico** [clone](http://www.waveshare.com/wiki/RP2040-PiZero) with a form factor and features similar to the Raspberry Pi Zero.
+
+# Hardware Add-Ons
+
+## Pico-DVI
+
+## WaveShare Pico-LCD-0.96
+
 
 # YubiKey simulator
 See this [repo](https://github.com/pagong/cpy9-rp2040-yksim)
