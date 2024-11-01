@@ -66,3 +66,39 @@ object <module 'board'> is of type module
   SPI -- <function>
   UART -- <function>
 >>> 
+
+>>> help(board.I2C())
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+RuntimeError: No pull up found on SDA or SCL; check your wiring
+
+>>> help(board.SPI())
+object <SPI> is of type SPI
+  deinit -- <function>
+  __enter__ -- <function>
+  __exit__ -- <function>
+  configure -- <function>
+  try_lock -- <function>
+  unlock -- <function>
+  readinto -- <function>
+  write -- <function>
+  write_readinto -- <function>
+  frequency -- <property>
+
+>>> help(board.UART())
+object <UART> is of type UART
+  __del__ -- <function>
+  deinit -- <function>
+  __enter__ -- <function>
+  __exit__ -- <function>
+  read -- <function>
+  readline -- <function>
+  readinto -- <function>
+  write -- <function>
+  reset_input_buffer -- <function>
+  baudrate -- <property>
+  in_waiting -- <property>
+  timeout -- <property>
+  Parity -- <class 'Parity'>
+>>> 
+
