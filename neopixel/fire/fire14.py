@@ -12,7 +12,7 @@ NUM_COLS = 16
 NUM_CELLS = 16
 
 NUM_PIXELS = (NUM_COLS * NUM_CELLS)  # Update this to match the number of LEDs.
-SPEED = 0.03       # Increase to slow down the fire. Decrease to speed it up.
+SPEED = 0.01       # Increase to slow down the fire. Decrease to speed it up.
 BRIGHTNESS = 0.2   # A number between 0.0 and 1.0, where 0.0 is off, and 1.0 is max.
 PIN = board.GP28   # This is the default pin on my RPi-Pico with 16x16 NeoPixel matrix
 
@@ -21,7 +21,7 @@ pixels = neopixel.NeoPixel(PIN, NUM_PIXELS, brightness=BRIGHTNESS, auto_write=Fa
 
 ####################### color mapping ###################
 
-ACT_PALETTE = 3        # 0 = Heat, 1 = Rainbow, 2 = Water, 3 = Forest
+ACT_PALETTE = 0        # 0 = Heat, 1 = Rainbow, 2 = Water, 3 = Forest
 
 HeatColors_palette = [
     0x000000,
@@ -163,10 +163,9 @@ def fire2012(column):
     # Step 4.  Map from heat cells to LED colors
     for row in range(NUM_CELLS):
         color = PALETTE[heat[col+row]]
-        if not (column & 1):
-            pixels[col+NUM_CELLS-1-row] = color
-        else:
-            pixels[col+row] = color
+        index = row * NUM_CELLS
+        index += (NUM_COLS-1-column) if (row & 1) else column
+        pixels[index] = color
 
 
 ########## main loop #################
