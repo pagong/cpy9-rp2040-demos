@@ -15,13 +15,13 @@ import framebufferio
 
 displayio.release_displays()
 
-# pin defs for DVI Sock
+# pin defs for RP2040-PiZero
 fb = picodvi.Framebuffer(320, 240,
-	clk_dp=board.CKP, clk_dn=board.CKN,
-	red_dp=board.GP26, red_dn=board.GP27,
-	green_dp=board.GP24, green_dn=board.GP25,
-	blue_dp=board.GP22, blue_dn=board.GP23,
-	color_depth=8)
+    clk_dp=board.CKP, clk_dn=board.CKN,
+    red_dp=board.GP26, red_dn=board.GP27,
+    green_dp=board.GP24, green_dn=board.GP25,
+    blue_dp=board.GP22, blue_dn=board.GP23,
+    color_depth=8)
 
 display = framebufferio.FramebufferDisplay(fb)
 
