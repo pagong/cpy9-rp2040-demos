@@ -14,6 +14,12 @@ CircuitPython demos running on various RP2040 based boards.
 ## Raspberry Pi Pico-W
 [This](media/Raspberry-Pi-Pico-W-details-17.jpg) is the enhanced **Pico** with Micro-USB port, 2MB flash and an onboard WiFi chip.
 
+- The following GPIO pins are used for communicating with the WLAN chip (CYW43439):
+  - GP23 - wifi power
+  - GP24 - SPI data
+  - GP25 - SPI CS
+  - GP29 - SPI clock
+
 ## WaveShare RP2040-Matrix
 [This](media/RP2040-Matrix-details-9.jpg) is a tiny **Pico** [clone](http://www.waveshare.com/wiki/RP2040-Matrix) with USB-C port, 2MB flash and a 5x5 NEOpixel matrix.
 
@@ -42,7 +48,6 @@ CircuitPython demos running on various RP2040 based boards.
 - are these supported by CPy9??
   - LCD module: GC9A01A
   - 6 axis sensor: QMI8658A 
-
 - Demos on Github
   - Clock demo (by [Daniel Wienzek](https://github.com/dawigit/picoclock))
   - Boilerplate demo (by [Philipp Molitor](https://github.com/PhilippMolitor/waveshare-rp2040-roundlcd-boilerplate))
