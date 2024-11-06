@@ -32,9 +32,19 @@ CircuitPython demos running on various RP2040 based boards.
 - some usage [hints](microPython/RP2040-ETH.md)
 
 ## WaveShare RP2040-LCD-0.96
-[This](media/RP2040-LCD-0.96-details-7.jpg) is a tiny **Pico** [clone](http://www.waveshare.com/wiki/RP2040-LCD-0.96) with USB-C port, 2MB flash and a 160x80 pixel colorful LCD display.
+[This](media/RP2040-LCD-0.96-details-7.jpg) is a tiny **Pico** [clone](http://www.waveshare.com/wiki/RP2040-LCD-0.96) with USB-C port, 2MB flash and a 160x80 pixel colorful LCD display. Additionally a Li-Ion charger is available.
 
 - some LCD demos (by [richteel](https://github.com/richteel/Waveshare-RP2040-LCD-0.96)); use `adafruit_st7735r` as display driver
+
+## WaveShare RP2040-LCD-1.28
+[This](media/RP2040-LCD-1.28_Spec01.jpg) is a tiny **Pico** [clone](https://www.waveshare.com/wiki/RP2040-LCD-1.28) with USB-C port, 2MB flash and a round 240x240 pixel colorful LCD display. Additionally a 6-axis sensor and a Li-Ion charger are available.
+
+- clock demo (by [Daniel Wienzek](https://github.com/dawigit/picoclock))
+- boilerplate demo (by [Philipp Molitor](https://github.com/PhilippMolitor/waveshare-rp2040-roundlcd-boilerplate))
+
+- are these supported by CPy9??
+  - LCD module: GC9A01A
+  - 6 axis sensor: QMI8658A 
 
 ## VCC-GND YD-RP2040
 [This](media/YD-2040-PIN.png) is a **Pico** [clone](https://sites.google.com/view/raspberrypibuenosaires/yd-rp2040-16mb) with USB-C port, 16MB flash, user button and a single NEOpixel.
@@ -46,12 +56,13 @@ CircuitPython demos running on various RP2040 based boards.
 [This](media/RP2040-PiZero-Schematic.pdf) is a **Pico** [clone](http://www.waveshare.com/wiki/RP2040-PiZero) with size and features similar to the Raspberry Pi Zero. The board has two USB-C ports, a mini-HDMI port which can be used with the `picodvi` module and a SD card slot.
 
 - Pico DVI
-  - Plus [demo](pico-dvi/pi-zero/plusses.py), by Tod Kurt
+  - Blinking Circles [demo](pico-dvi/pi-zero/plusses.py), by Tod Kurt
   - Spirograph [demo](pico-dvi/pi-zero/spiro.py), also by Tod Kurt
 
 # Hardware Add-Ons
 
 ## DVI-Sock
+[This](media/DVISockfrRaspberryPiPico-130853.jpg) is an add-on board for the **Pico** which uses an HDMI connector to send DVI signals to a digital monitor.
 
 ## WaveShare Pico-LCD-0.96
 [This](media/Pico-LCD-0.96-details-inter.jpg) is an add-on board for the **Pico** with a 4-wire LCD (ST7735S), a digital joystick and 2 user buttons. See the [wiki](https://www.waveshare.com/wiki/Pico-LCD-0.96) for more details.
