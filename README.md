@@ -39,12 +39,13 @@ CircuitPython demos running on various RP2040 based boards.
 ## WaveShare RP2040-LCD-1.28
 [This](media/RP2040-LCD-1.28_Spec01.jpg) is a tiny **Pico** [clone](https://www.waveshare.com/wiki/RP2040-LCD-1.28) with USB-C port, 2MB flash and a round 240x240 pixel colorful LCD display. Additionally a 6-axis sensor and a Li-Ion charger are available.
 
-- clock demo (by [Daniel Wienzek](https://github.com/dawigit/picoclock))
-- boilerplate demo (by [Philipp Molitor](https://github.com/PhilippMolitor/waveshare-rp2040-roundlcd-boilerplate))
-
 - are these supported by CPy9??
   - LCD module: GC9A01A
   - 6 axis sensor: QMI8658A 
+
+- Demos on Github
+  - Clock demo (by [Daniel Wienzek](https://github.com/dawigit/picoclock))
+  - Boilerplate demo (by [Philipp Molitor](https://github.com/PhilippMolitor/waveshare-rp2040-roundlcd-boilerplate))
 
 ## VCC-GND YD-RP2040
 [This](media/YD-2040-PIN.png) is a **Pico** [clone](https://sites.google.com/view/raspberrypibuenosaires/yd-rp2040-16mb) with USB-C port, 16MB flash, user button and a single NEOpixel.
