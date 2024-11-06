@@ -40,14 +40,17 @@ CircuitPython demos running on various RP2040 based boards.
 [This](media/YD-2040-PIN.png) is a **Pico** [clone](https://sites.google.com/view/raspberrypibuenosaires/yd-rp2040-16mb) with USB-C port, 16MB flash, user button and a single NEOpixel.
 
 - Pico DVI
-  - Slide show [demo](pico-dvi/slide-show/slide-show.py). The "YD-RP2040" has 15MB free on the ``CIRCUITPY`` drive, which is great for a slide show. But you need to install the CircuitPython firmware for the "Raspberry Pi" **Pico**, as the ``picodvi`` module is only included there.
+  - Slide show [demo](pico-dvi/dvi-sock/slide-show.py). The "YD-RP2040" has 15MB free on the ``CIRCUITPY`` drive, which is great for a slide show. But you need to install the CircuitPython firmware for the "Raspberry Pi" **Pico**, as the ``picodvi`` module is only included there.
 
 ## WaveShare RP2040-PiZero
-[This](media/RP2040-PiZero-Schematic.pdf) is a **Pico** [clone](http://www.waveshare.com/wiki/RP2040-PiZero) with a form factor and features similar to the Raspberry Pi Zero.
+[This](media/RP2040-PiZero-Schematic.pdf) is a **Pico** [clone](http://www.waveshare.com/wiki/RP2040-PiZero) with a form factor and features similar to the Raspberry Pi Zero. A mini-HDMI port can be used with the `picdvi`module.
+
+- Plus [demo](pico-dvi/pi-zero/plusses.py), by Tod Kurt
+- Spirograph [demo](pico-dvi/pi-zero/spiro.py), also by Tod Kurt
 
 # Hardware Add-Ons
 
-## Pico-DVI
+## DVI-Sock
 
 ## WaveShare Pico-LCD-0.96
 [This](media/Pico-LCD-0.96-details-inter.jpg) is an add-on board for the **Pico** with a 4-wire LCD (ST7735S), a digital joystick and 2 user buttons. See the [wiki](https://www.waveshare.com/wiki/Pico-LCD-0.96) for more details.
