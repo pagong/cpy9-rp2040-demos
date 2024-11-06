@@ -26,8 +26,6 @@ display = framebufferio.FramebufferDisplay(fb, auto_refresh=False)
 
 #############
 
-#display = board.DISPLAY
-#display.auto_refresh = False
 dw,dh = display.width, display.height
 cx,cy = dw//2, dh//2
 display.root_group = displayio.Group()
@@ -82,9 +80,9 @@ while True:
     if colr == 0 or colr == num_shades-1: colri = -colri
 
     make_spirograph( a, b, h, dt=0.03, colr=colr )
-    
+
     if time.monotonic() - last_time > 0.1:
         last_time = time.monotonic()
         # drat can't do this
-        #tile_grid.bitmap = bitmapfilter.mix(bitmap, dim) 
+        #tile_grid.bitmap = bitmapfilter.mix(bitmap, dim)
     display.refresh()
