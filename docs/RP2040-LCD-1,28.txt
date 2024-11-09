@@ -1,0 +1,54 @@
+Adafruit CircuitPython 9.2.0 on 2024-10-28; Waveshare RP2040-LCD-1.28 with rp2040
+>>> import board
+>>> help(board)
+object <module 'board'> is of type module
+  __name__ -- board
+  board_id -- waveshare_rp2040_lcd_1_28
+  GP0 -- board.GP0
+  GP1 -- board.GP1
+  GP2 -- board.GP2
+  GP3 -- board.GP3
+  GP4 -- board.GP4
+  GP5 -- board.GP5
+  IMU_SDA -- board.IMU_SDA
+  GP6 -- board.IMU_SDA
+  IMU_SCL -- board.IMU_SCL
+  GP7 -- board.IMU_SCL
+  LCD_DC -- board.LCD_DC
+  GP8 -- board.LCD_DC
+  LCD_CS -- board.LCD_CS
+  GP9 -- board.LCD_CS
+  LCD_CLK -- board.LCD_CLK
+  GP10 -- board.LCD_CLK
+  LCD_DIN -- board.LCD_DIN
+  GP11 -- board.LCD_DIN
+  LCD_RST -- board.LCD_RST
+  GP12 -- board.LCD_RST
+  GP13 -- board.GP13
+  GP14 -- board.GP14
+  GP15 -- board.GP15
+  GP16 -- board.GP16
+  GP17 -- board.GP17
+  GP18 -- board.GP18
+  GP19 -- board.GP19
+  GP20 -- board.GP20
+  GP21 -- board.GP21
+  GP22 -- board.GP22
+  IMU_INT1 -- board.IMU_INT1
+  GP23 -- board.IMU_INT1
+  IMU_INT2 -- board.IMU_INT2
+  GP24 -- board.IMU_INT2
+  LCD_BL -- board.LCD_BL
+  GP25 -- board.LCD_BL
+  GP26_A0 -- board.GP26_A0
+  GP26 -- board.GP26_A0
+  A0 -- board.GP26_A0
+  GP27_A1 -- board.GP27_A1
+  GP27 -- board.GP27_A1
+  A1 -- board.GP27_A1
+  GP28_A2 -- board.GP28_A2
+  GP28 -- board.GP28_A2
+  A2 -- board.GP28_A2
+  A3 -- board.A3
+  BAT_ADC -- board.A3
+>>> 

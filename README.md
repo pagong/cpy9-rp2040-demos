@@ -45,21 +45,12 @@ CircuitPython demos running on various RP2040 based boards.
 ## WaveShare RP2040-LCD-1.28
 [This](media/RP2040-LCD-1.28_Spec01.jpg) is a tiny **Pico** [clone](https://www.waveshare.com/wiki/RP2040-LCD-1.28) with USB-C port, 2MB flash and a round 240x240 pixel colorful LCD display. Additionally a 6-axis sensor and a Li-Ion charger are available.
 
-- are these supported by CPy9??
-  - LCD module: GC9A01A
-  - 6 axis sensor: QMI8658A
-- CPy code
-  - TodBot: https://github.com/todbot/CircuitPython_GC9A01_demos
+- some LCD demos (by [todbot](https://github.com/todbot/CircuitPython_GC9A01_demo)); use `gc9a01` from the community bundle as display driver
+  - Hello and Circles [demo](lcd-1,28/todbot/gc9a01_hellocircles.py), by Tod Kurt
+  - Gauge and Needle [demo](lcd-1,28/todbot/gc9a01_gauge_knob.py), by Tod Kurt
+
+- 6-axis sensor QMI8658A
   - Aedile: https://github.com/aedile/circuit_python_wsRP2040128
-  - TylerCrumpton: https://github.com/tylercrumpton/CircuitPython_GC9A01
-    - Community bundle: https://github.com/adafruit/CircuitPython_Community_Bundle/tree/main/libraries/drivers/gc9a01
-    - circuitpython-community-bundle / lib / gc9a01.mpy
-- Demos on Github
-  - LCD demo (by [Mert Aksoy](https://github.com/mertaksoy/RP2040-LCD-1.28))
-    - using a custom firmware (by [Russ Hughes](https://github.com/russhughes/gc9a01_mpy))
-    - based on this ST7789 driver (by [devbis](https://github.com/devbis/st7789_mpy))
-  - Clock demo (by [Daniel Wienzek](https://github.com/dawigit/picoclock))
-  - Boilerplate demo (by [Philipp Molitor](https://github.com/PhilippMolitor/waveshare-rp2040-roundlcd-boilerplate))
 
 ## VCC-GND YD-RP2040
 [This](media/YD-2040-PIN.png) is a **Pico** [clone](https://sites.google.com/view/raspberrypibuenosaires/yd-rp2040-16mb) with USB-C port, 16MB flash, user button and a single NEOpixel.
