@@ -1,6 +1,6 @@
 ## CircuitPython_NeoMatrix
 
-Port of Adafruit's `Arduino` [library](https://github.com/adafruit/Adafruit_NeoMatrix) `Adafruit_NeoMatrix` to CircuitPython.
+Port of Adafruit's `Adafruit_NeoMatrix` [library](https://github.com/adafruit/Adafruit_NeoMatrix) for the Arduino to CircuitPython.  
 See the [Adafruit NeoPixel Überguide](https://learn.adafruit.com/adafruit-neopixel-uberguide/neomatrix-library) for everything you need to know about NeoPixel-Grids.
 
 - Features:
@@ -8,20 +8,21 @@ See the [Adafruit NeoPixel Überguide](https://learn.adafruit.com/adafruit-neopi
   - Tiled matrices: multiple single matrices
 
 ### Single matrix
-- Horizontal strips
-  - 16w * 16h , 8w * 32h
+- Horizontal strips (row major)
+  - 8w * 8*h, 16w * 16h , 8w * 32h
   - zigzag and progressive rows
-- Vertical strips
-  - 16w * 16h, 32w * 8h
+- Vertical strips (column major)
+  - 8w * 8h, 16w * 16h, 32w * 8h
   - zigzag and progressive columns
 - position of first Pixel
   - Bottom, Top, Left, Right
 
 ### Tiled matrices
 - Assumption: only identical matrices are used
-  - either Nx 16x16, or Nx 8x32, or Nx 32x8
+  - tiles of size 8 * 8, or 16 * 16, or 8 * 32, or 32 * 8
 - Tiles are laid out in a regular style
-  - Nx tiles in X direction, Mx tiles in Y direction
+  - N * tiles in X direction, either Left --> Right, or reversed
+  - M * tiles in Y direction, either Top --> Down, or reversed
   - tiles are wired either in progressive or zigzag mode
 - Position of first Tile
   - Bottom, Top, Left, Right
