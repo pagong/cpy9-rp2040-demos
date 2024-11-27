@@ -4,12 +4,12 @@ Port of Adafruit's `Adafruit_NeoMatrix` [library](https://github.com/adafruit/Ad
 See the [Adafruit NeoPixel Überguide](https://learn.adafruit.com/adafruit-neopixel-uberguide/neomatrix-library) for everything you need to know about NeoPixel-Grids.
 
 - Features:
-  - Single matrix: 16x16, 8x32, 32x8
+  - Single matrix: 8x8, 16x16, 8x32, 32x8 NeoPixels
   - Tiled matrices: multiple single matrices
 
 ### Single matrix
 - Horizontal strips (row major)
-  - 8w * 8*h, 16w * 16h , 8w * 32h
+  - 8w * 8h, 16w * 16h , 8w * 32h
   - zigzag and progressive rows
 - Vertical strips (column major)
   - 8w * 8h, 16w * 16h, 32w * 8h
