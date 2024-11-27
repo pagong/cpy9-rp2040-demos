@@ -75,6 +75,10 @@ CircuitPython demos running on various RP2040 based boards.
 
 - pin-out of the 4-wire LCD is similar to the RP2040-LCD-0.96; use `adafruit_st7735r` as display driver
 
+## GeeekPi dev kit plus: EP-0172
+
+## Joy-It dev kit: RB-P-XPLR
+
 # YubiKey simulator
 See this [repo](https://github.com/pagong/cpy9-rp2040-yksim)
 
