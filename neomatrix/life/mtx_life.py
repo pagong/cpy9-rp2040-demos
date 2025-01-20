@@ -9,8 +9,6 @@ from micropython import const
 
 from adafruit_led_animation.animation import Animation
 
-#from neomatrix import NeoGrid, NeoMatrix
-
 
 def _is_pixel_off(pixel):
     return pixel[0] == 0 and pixel[1] == 0 and pixel[2] == 0
@@ -71,9 +69,10 @@ class ConwaysLifeAnimation(Animation):
 
         # counter to store how many turns since the last change
         self.equilibrium_turns = 0
-        self.equilibrium_max = 5
+        self.equilibrium_max = 42
 
-        # self._init_cells()
+        # counter to store changes during previous round
+        self.changes = 0
 
     def _is_grid_empty(self):
         """
@@ -85,7 +84,6 @@ class ConwaysLifeAnimation(Animation):
             for x in range(self.width):
                 if not _is_pixel_off(self.pixel_grid[x][y]):
                     return False
-
         return True
 
     def _init_cells(self):
@@ -96,7 +94,9 @@ class ConwaysLifeAnimation(Animation):
         """
         self.pixel_grid.fill(0x000000)
         for cell in self.initial_cells:
-            self.pixel_grid[cell] = self.color
+            x = cell[0] + (self.width-8) // 2
+            y = self.height-2 - cell[1]
+            self.pixel_grid[x][y] = self.color
 
     def _count_neighbors(self, cell):
         """
@@ -107,9 +107,15 @@ class ConwaysLifeAnimation(Animation):
         neighbors = 0
         for direction in ConwaysLifeAnimation.DIRECTION_OFFSETS:
             try:
-                if not _is_pixel_off(
-                    self.pixel_grid[cell[0] + direction[0]] [cell[1] + direction[1]]
-                ):
+                x = cell[0]+direction[0]
+                if x<0: x = self.width-1
+                if x==self.width: x = 0
+
+                y = cell[1]+direction[1]
+                if y<0: y = self.height-1
+                if y==self.height: y = 0
+
+                if not _is_pixel_off(self.pixel_grid[x][y]):
                     neighbors += 1
             except IndexError:
                 pass
@@ -178,15 +184,22 @@ class ConwaysLifeAnimation(Animation):
 
         # if equilibrium restart mode is enabled
         if self.equilibrium_restart:
-            # if there were no cells spawned or despaned this round
+            # if there were no cells spawned or despawned this round
             if len(despawning_cells) == 0 and len(spawning_cells) == 0:
                 # increment equilibrium turns counter
                 self.equilibrium_turns += 1
-                # if the counter is 3 or higher
-                if self.equilibrium_turns > self.equilibrium_max:
-                    # go back to the initial_cells
-                    self._init_cells()
 
-                    # reset the turns counter to zero
-                    self.equilibrium_turns = 0
+            counter = len(despawning_cells) + len(spawning_cells)
+            if self.changes == counter:
+                # increment equilibrium turns counter
+                self.equilibrium_turns += 1
+            self.changes = counter
+
+            # if the counter is 3 or higher
+            if self.equilibrium_turns > self.equilibrium_max:
+                # go back to the initial_cells
+                self._init_cells()
+
+                # reset the turns counter to zero
+                self.equilibrium_turns = 0
 

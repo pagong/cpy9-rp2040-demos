@@ -20,10 +20,10 @@ pixels = neopixel.NeoPixel(pixel_pin, pixel_num, brightness=0.02, auto_write=Fal
 ####
 
 # Use mode to select matrix type for 4 common tile arrangements of a 32x32 matrix
-mode = "hsquares"       # horizontally arranged 16x16 tiles
+#mode = "hsquares"      # horizontally arranged 16x16 tiles
 #mode = "vsquares"      # vertically arranged 16x16 tiles
 #mode = "hstripes"      # horizontally arranged 32x8 tiles
-#mode = "vstripes"      # vertically arranged 8x32 tiles
+mode = "vstripes"       # vertically arranged 8x32 tiles
 
 if (mode == "hsquares"):
     matrixType = (
@@ -77,16 +77,21 @@ else:
 
 matrix = NeoMatrix(pixels, tileWidth, tileHeight, tilesX, tilesY, matrixType)
 
+# based on xkcd's tribute to John Conway (1937-2020) https://xkcd.com/2293/
 initial_cells = [
-    (2, 1),
-    (3, 1),
-    (4, 1),
-    (5, 1),
-    (6, 1),
+    (2, 1), (4, 1),
+    (2, 2), (4, 2),
+    (3, 3), (6, 3),
+    (1, 4), (3, 4), (5, 4),
+    (0, 5), (2, 5), (3, 5), (4, 5),
+    (3, 6),
+    (2, 7), (4, 7),
+    (2, 8), (4, 8),
+    (2, 9), (3, 9), (4, 9),
 ]
 
 # initialize the animation
-life = ConwaysLifeAnimation(matrix, 0.2, 0xff00ff, initial_cells)
+life = ConwaysLifeAnimation(matrix, 0.1, color, initial_cells)
 
 while True:
     # call animation to show the next animation frame
