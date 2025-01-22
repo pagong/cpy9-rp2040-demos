@@ -25,11 +25,11 @@ def draw():
     nextX = X + random.randint(0, LEN) - LEN//2
     if nextX<0: nextX = 0
     if nextX >= WIDTH: nextX = WIDTH-1
-  
+
     nextY = Y + random.randint(0, LEN) - LEN//2
     if nextY<0: nextY = 0
     if nextY >= HEIGHT: nextY = HEIGHT-1
-    
+ 
     color = rainbowio.colorwheel(COL)
     matrix.line(X, Y, nextX, nextY, color)
 
