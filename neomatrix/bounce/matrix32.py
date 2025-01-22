@@ -64,8 +64,7 @@ def MatrixSetup(pixel_pin, matrixMode, brightness = 0.1):
         rotation = 0
 
     else:
-        print("Invalid mode = ", matrixMode)
-        exit
+        raise ValueError(matrixMode)
 
 
     # Update to match the number of NeoPixels you have connected
