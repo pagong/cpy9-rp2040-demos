@@ -3,7 +3,7 @@
 
 #######################################
 
-# Map a 32x32 NeoPixel matrix coordinates to sequential strand indices [0..1023].
+# Map 32x32 NeoPixel matrix coordinates to sequential strand indices [0..1023].
 # Works with four NeoMatrix tiles (either squares or stripes) wired as a 32x32 display.
 
 import neopixel
@@ -12,10 +12,10 @@ from neomatrix import *
 #######################################
 
 # Use matrixMode to select matrix type for 4 common tile arrangements of a 32x32 matrix
-#   matrixMode = "hsquares"      # horizontally arranged 16x16 tiles
-#   matrixMode = "vsquares"      # vertically arranged 16x16 tiles
-#   matrixMode = "vstripes"      # vertically arranged 8x32 tiles
-#   matrixMode = "hstripes"      # horizontally arranged 32x8 tiles
+#   matrixMode = "hsquares"      # 2x2 horizontally arranged 16x16 tiles
+#   matrixMode = "vsquares"      # 2x2 vertically arranged 16x16 tiles
+#   matrixMode = "vstripes"      # 4x1 vertically arranged 8x32 tiles
+#   matrixMode = "hstripes"      # 1x4 horizontally arranged 32x8 tiles
 
 def MatrixSetup(pixel_pin, matrixMode, brightness = 0.1):
 
